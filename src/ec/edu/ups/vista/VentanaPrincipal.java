@@ -199,7 +199,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn20.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn20.setIcon(bola);
             matriz[2][0] = 1;
@@ -209,7 +209,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
-        if (terminado == false) {
+
+        if (terminado == false && btn10.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn10.setIcon(bola);
             matriz[1][0] = 1;
@@ -219,7 +220,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn01.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn01.setIcon(bola);
             matriz[0][1] = 1;
@@ -228,7 +229,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn01ActionPerformed
     }
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn11.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn11.setIcon(bola);
             matriz[1][1] = 1;
@@ -238,7 +239,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn21.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn21.setIcon(bola);
             matriz[2][1] = 1;
@@ -248,7 +249,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn02ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn02.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn02.setIcon(bola);
             matriz[0][2] = 1;
@@ -258,7 +259,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn02ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn12.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn12.setIcon(bola);
             matriz[1][2] = 1;
@@ -268,7 +269,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn22.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn22.setIcon(bola);
             matriz[2][2] = 1;
@@ -278,7 +279,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn22ActionPerformed
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
-        if (terminado == false) {
+        if (terminado == false && btn00.getIcon() == null) {
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn00.setIcon(bola);
             matriz[0][0] = 1;
@@ -312,7 +313,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         }
         lblGanador.setText("");
-        terminado=false;
+        terminado = false;
     }//GEN-LAST:event_btnResetActionPerformed
 
     /**
@@ -500,13 +501,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 return;
             }
         }
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
-            }
-            System.out.println("");
-        }
     }
 
     public void turnoMaquina() {
@@ -519,7 +513,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 }
             }
         }
-        if (cont < 9 && terminado==false) {
+        if (cont < 9 && terminado == false) {
             do {
                 int turnoMaquina = (int) (Math.random() * (3) + 0);
                 int turnoMaquina2 = (int) (Math.random() * (3) + 0);
@@ -556,7 +550,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     matriz[turnoMaquina][turnoMaquina2] = -1;
                     ganador();
                     vacio = true;
-                    System.out.println(turnoMaquina + " - " + turnoMaquina2);
                 }
             } while (vacio == false);
         }
