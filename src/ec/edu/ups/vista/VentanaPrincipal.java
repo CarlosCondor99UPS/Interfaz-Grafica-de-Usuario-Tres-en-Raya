@@ -5,6 +5,8 @@
  */
 package ec.edu.ups.vista;
 
+import static java.awt.Color.BLACK;
+import static java.awt.Color.RED;
 import javax.swing.ImageIcon;
 import javax.swing.JToggleButton;
 
@@ -35,6 +37,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblVertical3 = new javax.swing.JLabel();
+        lblVertical2 = new javax.swing.JLabel();
+        lblVertical1 = new javax.swing.JLabel();
+        lblHorizontal1 = new javax.swing.JLabel();
+        lblHorizontal2 = new javax.swing.JLabel();
+        lblHorizontal3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -52,10 +60,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         btnReset = new javax.swing.JButton();
         lblGanador = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(90, 90));
         getContentPane().setLayout(null);
+
+        lblVertical3.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(lblVertical3);
+        lblVertical3.setBounds(370, 110, 10, 330);
+
+        lblVertical2.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(lblVertical2);
+        lblVertical2.setBounds(230, 110, 10, 330);
+
+        lblVertical1.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(lblVertical1);
+        lblVertical1.setBounds(90, 110, 10, 330);
+
+        lblHorizontal1.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(lblHorizontal1);
+        lblHorizontal1.setBounds(40, 390, 390, 10);
+
+        lblHorizontal2.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(lblHorizontal2);
+        lblHorizontal2.setBounds(40, 150, 390, 10);
+
+        lblHorizontal3.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(lblHorizontal3);
+        lblHorizontal3.setBounds(40, 270, 390, 10);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
@@ -193,7 +227,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         lblGanador.setBounds(490, 350, 230, 70);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 730, 750);
+        jPanel1.setBounds(0, 0, 730, 460);
+
+        jLabel7.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(160, 110, 10, 330);
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(40, 110, 390, 330);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -307,6 +348,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btn20.setSelected(false);
         btn21.setSelected(false);
         btn22.setSelected(false);
+        lblHorizontal1.setBorder(null);
+        lblHorizontal2.setBorder(null);
+        lblHorizontal3.setBorder(null);
+        lblVertical1.setBorder(null);
+        lblVertical2.setBorder(null);
+        lblVertical3.setBorder(null);
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = 0;
@@ -384,10 +431,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[0][0] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        lblVertical1.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        lblVertical1.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
@@ -397,10 +446,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[0][1] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        lblVertical2.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        lblVertical2.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
@@ -410,10 +461,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[0][2] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        lblVertical3.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        lblVertical3.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
@@ -425,10 +478,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[0][0] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        lblHorizontal2.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        lblHorizontal2.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
@@ -438,10 +493,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[1][0] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        lblHorizontal3.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        lblHorizontal3.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
@@ -451,10 +508,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[2][0] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        lblHorizontal1.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        lblHorizontal1.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
@@ -572,7 +631,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblGanador;
+    private javax.swing.JLabel lblHorizontal1;
+    private javax.swing.JLabel lblHorizontal2;
+    private javax.swing.JLabel lblHorizontal3;
+    private javax.swing.JLabel lblVertical1;
+    private javax.swing.JLabel lblVertical2;
+    private javax.swing.JLabel lblVertical3;
     // End of variables declaration//GEN-END:variables
 }
