@@ -38,6 +38,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         lblVertical3 = new javax.swing.JLabel();
+        lblDiagonal1 = new javax.swing.JLabel();
         lblVertical2 = new javax.swing.JLabel();
         lblVertical1 = new javax.swing.JLabel();
         lblHorizontal1 = new javax.swing.JLabel();
@@ -70,6 +71,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         lblVertical3.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(lblVertical3);
         lblVertical3.setBounds(370, 110, 10, 330);
+        getContentPane().add(lblDiagonal1);
+        lblDiagonal1.setBounds(40, 110, 390, 330);
 
         lblVertical2.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(lblVertical2);
@@ -361,6 +364,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
         lblGanador.setText("");
         terminado = false;
+        lblDiagonal1.setIcon(null);
     }//GEN-LAST:event_btnResetActionPerformed
 
     /**
@@ -525,10 +529,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[2][0] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal1.png");
+                        lblDiagonal1.setIcon(icon);
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal1.png");
+                        lblDiagonal1.setIcon(icon);
                         return;
                     }
                 }
@@ -538,10 +546,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     if (matriz[0][0] == 1) {
                         lblGanador.setText("GANASTE");
                         terminado = true;
+                        ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal2.png");
+                        lblDiagonal1.setIcon(icon);
                         return;
                     } else {
                         lblGanador.setText("PERDISTE");
                         terminado = true;
+                        ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal2.png");
+                        lblDiagonal1.setIcon(icon);
                         return;
                     }
                 }
@@ -634,6 +646,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblDiagonal1;
     private javax.swing.JLabel lblGanador;
     private javax.swing.JLabel lblHorizontal1;
     private javax.swing.JLabel lblHorizontal2;
