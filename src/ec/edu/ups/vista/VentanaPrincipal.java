@@ -25,7 +25,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         initComponents();
         this.setSize(725, 500);
-        
+        this.setTitle("Juego Tres en Raya - Carlos Condor");
     }
 
     /**
