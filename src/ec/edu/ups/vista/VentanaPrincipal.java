@@ -15,7 +15,7 @@ import javax.swing.JToggleButton;
  * @author tians
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
-
+    //Declaracion de variables
     private int[][] matriz = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
     private boolean terminado = false;
 
@@ -25,7 +25,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         initComponents();
         this.setSize(725, 500);
-
+        
     }
 
     /**
@@ -243,96 +243,142 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
+        //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn20.getIcon() == null) {
+            //Se setea la imagen del circulo rojo 
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn20.setIcon(bola);
+            //Se setea a la matriz como 1 en el turno del huamno
             matriz[2][0] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
-
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn10.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn10.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[1][0] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn01.getIcon() == null) {
+            //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn01.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[0][1] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
     }//GEN-LAST:event_btn01ActionPerformed
     }
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn11.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn11.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[1][1] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn21.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn21.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[2][1] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn02ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn02.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn02.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[0][2] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn02ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn12.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn12.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[1][2] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn22.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn22.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[2][2] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn22ActionPerformed
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
+         //Si el boton se selecciona, no tiene icono y aun no termina el juego
         if (terminado == false && btn00.getIcon() == null) {
+             //Se setea la imagen del circulo rojo
             ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/bolaRoja.png");
             btn00.setIcon(bola);
+             //Se setea a la matriz como 1 en el turno del huamno
             matriz[0][0] = 1;
+            //Se ejecuta el metodo ganador, para comprobar si ya existe algun ganador
             ganador();
+            //Se ejecutra el metodo turnoMaquina para la eleccion del computador
             turnoMaquina();
         }
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        //Boton reset, pone todas las variables a su valor original
+        //Los botones a null
         btn00.setIcon(null);
         btn01.setIcon(null);
         btn02.setIcon(null);
@@ -342,6 +388,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btn20.setIcon(null);
         btn21.setIcon(null);
         btn22.setIcon(null);
+        //Se deseleccionan
         btn00.setSelected(false);
         btn01.setSelected(false);
         btn02.setSelected(false);
@@ -351,20 +398,25 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btn20.setSelected(false);
         btn21.setSelected(false);
         btn22.setSelected(false);
+        //Se borran las lineas que demuestran el ganador
         lblHorizontal1.setBorder(null);
         lblHorizontal2.setBorder(null);
         lblHorizontal3.setBorder(null);
         lblVertical1.setBorder(null);
         lblVertical2.setBorder(null);
         lblVertical3.setBorder(null);
+        lblDiagonal1.setIcon(null);
+        //Se vuelve a llenar de 0 la matriz
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = 0;
             }
         }
+        //Se quita si gano o no
         lblGanador.setText("");
+        //Se define false a termina ya que se reinicia el juego
         terminado = false;
-        lblDiagonal1.setIcon(null);
+        
     }//GEN-LAST:event_btnResetActionPerformed
 
     /**
@@ -409,7 +461,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
     }
-
+    
+    //Metodo para contar cuantos circulos o equis existen
     public boolean contar() {
         int cont = 0, cont2 = 0;
         for (int i = 0; i < matriz.length; i++) {
@@ -421,55 +474,88 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 }
             }
         }
+        //Si existe mas de 3 se puede comparar
         if (cont > 2 || cont2 > 2) {
             return true;
         }
         return false;
     }
-
+    
+    //Metodo que decide el ganador
     public void ganador() {
+        //Si el metodo contar devuelve true
         if (contar()) {
-            //3 posibilidades verticales
+            //3 posibilidades verticales que se comparan
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[0][0] != 0 && matriz[1][0] != 0 && matriz[2][0] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[0][0] == matriz[1][0] && matriz[1][0] == matriz[2][0]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[0][0] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                        //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblVertical1.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblVertical1.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
             }
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[0][1] != 0 && matriz[1][1] != 0 && matriz[2][1] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[0][1] == matriz[1][1] && matriz[1][1] == matriz[2][1]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[0][1] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblVertical2.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblVertical2.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
             }
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[0][2] != 0 && matriz[1][2] != 0 && matriz[2][2] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[0][2] == matriz[1][2] && matriz[1][2] == matriz[2][2]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[0][2] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblVertical3.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblVertical3.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
@@ -477,87 +563,139 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
 
             //3 posibilidades horizontales
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[0][0] != 0 && matriz[0][1] != 0 && matriz[0][2] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[0][0] == matriz[0][1] && matriz[0][1] == matriz[0][2]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[0][0] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblHorizontal2.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblHorizontal2.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
             }
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[1][0] != 0 && matriz[1][1] != 0 && matriz[1][2] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[1][0] == matriz[1][1] && matriz[1][1] == matriz[1][2]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[1][0] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblHorizontal3.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblHorizontal3.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
             }
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[2][0] != 0 && matriz[2][1] != 0 && matriz[2][2] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[2][0] == matriz[2][1] && matriz[2][1] == matriz[2][2]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[2][0] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblHorizontal1.setBorder(javax.swing.BorderFactory.createLineBorder(BLACK, 10));
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         lblHorizontal1.setBorder(javax.swing.BorderFactory.createLineBorder(RED, 10));
                         return;
                     }
                 }
             }
-
+            
             //2 posibilidades diagonales
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[2][0] != 0 && matriz[1][1] != 0 && matriz[0][2] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[2][0] == matriz[1][1] && matriz[1][1] == matriz[0][2]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[2][0] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal1.png");
                         lblDiagonal1.setIcon(icon);
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal1.png");
                         lblDiagonal1.setIcon(icon);
                         return;
                     }
                 }
             }
+            
+            //Si en la matriz la linea vertical esta llena 
             if (matriz[0][0] != 0 && matriz[1][1] != 0 && matriz[2][2] != 0) {
+                //Si las 3 posiciones son iguales
                 if (matriz[0][0] == matriz[1][1] && matriz[1][1] == matriz[2][2]) {
+                    //Se compara si son circulos 1 o equis -1
                     if (matriz[0][0] == 1) {
+                        //Si son 1 el humano gana
                         lblGanador.setText("GANASTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal2.png");
                         lblDiagonal1.setIcon(icon);
                         return;
                     } else {
+                        //Si son -1 la maquina gana
                         lblGanador.setText("PERDISTE");
+                         //Se termina el juego
                         terminado = true;
+                        //Se setea la linea que muestra en donde gana
                         ImageIcon icon=new ImageIcon("src/ec/edu/ups/imagenes/diagonal2.png");
                         lblDiagonal1.setIcon(icon);
                         return;
                     }
                 }
             }
+            
+            //Se realiza un conteo para saber si ya se jugo todos los botones
             int cont = 0;
             for (int i = 0; i < matriz.length; i++) {
                 for (int j = 0; j < matriz[i].length; j++) {
@@ -566,16 +704,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     }
                 }
             }
+            //Si es ya se contaron todos existe un empate
             if (cont == 9 && terminado == false) {
+                //Se setea un empate
                 lblGanador.setText("EMPATE");
+                //Se termina el juego
                 terminado = true;
                 return;
             }
         }
     }
-
+    
+    //Metodo para el turno de la maquina
     public void turnoMaquina() {
+        //Se declara una variable boolean
         boolean vacio = false;
+        //Se hace un conteo para saber si no es empate
         int cont = 0;
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
@@ -584,12 +728,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 }
             }
         }
+        //Mientras sea menor que 9 y no se haya terminado el juego
         if (cont < 9 && terminado == false) {
+            //Bucle para encontrar un numero aleatorio que no este ya en juego
             do {
+                //Se declara dos posiciones que son las posiciones en la matriz
                 int turnoMaquina = (int) (Math.random() * (3) + 0);
                 int turnoMaquina2 = (int) (Math.random() * (3) + 0);
+                //Se compara si los valores escogidos no tienen ningun circulo o equis
                 if (matriz[turnoMaquina][turnoMaquina2] == 0) {
+                    //Se obtiene la imagen de equis
                     ImageIcon bola = new ImageIcon("src/ec/edu/ups/imagenes/xAzul.png");
+                    //If para saber en que posiciones se setea el icon
                     if (turnoMaquina == 0 && turnoMaquina2 == 0) {
                         btn00.setIcon(bola);
                         matriz[0][0] = -1;
@@ -618,8 +768,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                         btn22.setIcon(bola);
                         matriz[2][2] = -1;
                     }
-                    matriz[turnoMaquina][turnoMaquina2] = -1;
+                    //Se ejecuta el metodo para saber si ya gano alguien
                     ganador();
+                    //Se setea a true ya que se encontro un espacio vacio para el turno de la maquina
                     vacio = true;
                 }
             } while (vacio == false);
